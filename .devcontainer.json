@@ -1,0 +1,46 @@
+{
+	"name": "Kubernetes-Minikube-in-Docker",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:1": {
+			"installZsh": "true",
+			"username": "vscode",
+			"uid": "1000",
+			"gid": "1000",
+			"upgradePackages": "false",
+			"installOhMyZsh": "true",
+			"nonFreePackages": "true"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:1": {
+			"enableNonRootDocker": "true",
+			"username": "vscode",
+			"moby": "true"
+		},
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+			"version": "latest",
+			"helm": "latest",
+			"minikube": "latest"
+		},
+		"ghcr.io/amygroup-inc/devcontainer-features/kusion:0": {}
+	},
+	"overrideFeatureInstallOrder": [
+		"ghcr.io/devcontainers/features/common-utils",
+		"ghcr.io/devcontainers/features/docker-in-docker",
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube",
+		"ghcr.io/amygroup-inc/devcontainer-features/kusion:0"
+	],
+	// The value of the openFiles property is an array of one or more files in your repository. 
+	// The paths are relative to the root of the repository (absolute paths are not supported). 
+	// The files are opened in the web client in the order specified, with the first file in the array displayed in the editor.
+	"customizations": {
+		"codespaces": {
+			"openFiles": [
+				"appops/go-city/dev/main.k",
+				"appops/go-city/base/base.k"
+			]
+		}
+	},
+	"onCreateCommand": [
+		"docker pull gcr.io/k8s-minikube/kicbase:v0.0.36"
+	]
+}

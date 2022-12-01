@@ -1,0 +1,2 @@
+# konfig
+amy's config

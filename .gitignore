@@ -1,0 +1,4 @@
+minikube.log
+.kclvm/
+kusion_state.json
+.DS_Store
