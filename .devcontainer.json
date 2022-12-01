@@ -39,8 +39,5 @@
 				"appops/go-city/base/base.k"
 			]
 		}
-	},
-	"onCreateCommand": [
-		"docker pull gcr.io/k8s-minikube/kicbase:v0.0.36"
-	]
+	}
 }
