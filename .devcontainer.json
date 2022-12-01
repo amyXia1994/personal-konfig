@@ -21,13 +21,13 @@
 			"helm": "latest",
 			"minikube": "latest"
 		},
-		"ghcr.io/amygroup-inc/devcontainer-features/kusion:0": {}
+		"ghcr.io/KusionStack/devcontainer-features/kusion:0": {}
 	},
 	"overrideFeatureInstallOrder": [
 		"ghcr.io/devcontainers/features/common-utils",
 		"ghcr.io/devcontainers/features/docker-in-docker",
 		"ghcr.io/devcontainers/features/kubectl-helm-minikube",
-		"ghcr.io/amygroup-inc/devcontainer-features/kusion:0"
+		"ghcr.io/KusionStack/devcontainer-features/kusion:0"
 	],
 	// The value of the openFiles property is an array of one or more files in your repository. 
 	// The paths are relative to the root of the repository (absolute paths are not supported). 
